@@ -1,0 +1,22 @@
+﻿<Window x:Class="Trade.View.Autorization"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Trade.View"
+        mc:Ignorable="d"
+        Title="Autorization" Height="400" Width="300" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel>
+            <Label Content="Логин"></Label>
+            <TextBox Name="tbLogin"></TextBox>
+            <Label  Content="Пароль"></Label>
+            <PasswordBox Name="tbPassword"></PasswordBox>
+            <StackPanel Name="spCaptcha" Visibility="Visible">
+                <Canvas Name ="canvas"  Height="60"></Canvas>
+                <TextBox Name ="tbCaptcha"></TextBox>
+            </StackPanel>
+            <Button Click="OnSignIn" Height="20" >Войти</Button>
+        </StackPanel>
+    </Grid>
+</Window>
